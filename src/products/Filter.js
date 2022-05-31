@@ -1,14 +1,11 @@
 import React from "react";
-import AllProducts from "./AllProducts";
 
 const Filter = ({ filter, setFilter }) => {
   const filters = [
     {
       label: "Color",
       category: "color",
-      values: AllProducts.map((product) => {
-        return product.color;
-      }),
+      values: ["orange", "blue", "black", "white", "pink", "red"],
     },
     {
       label: "Brand",
@@ -45,14 +42,14 @@ const Filter = ({ filter, setFilter }) => {
   }
 
   return (
-    <div className="space-y-6 py-20 p-8">
+    <div className="space-y-6  p-8">
       {filters.map((filterCategory) => {
         return (
           <div>
             <p className="font-semibold mb-4">{filterCategory.label}</p>
             {filterCategory.values.map((filterValue) => {
               return (
-                <div className="flex gap-8 justify-between mb-2">
+                <div className="flex gap-8 mb-2">
                   <input
                     type="checkbox"
                     value={filterValue}

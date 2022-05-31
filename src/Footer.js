@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="w-3/4 mx-auto flex justify-around border-t px-12 py-8">
-      <div className="w-1/4 gap-y-2 grid">
+    <div className="laptop:w-3/4  mx-auto laptop:flex grid justify-around border-t px-12 py-8 gap-y-4">
+      <div className="laptop:w-1/4 w-full gap-y-2 grid ">
         <h1 className="pointer font-bold text-2xl">THALIA</h1>
         <p>
           Any questions? Let us know in store at 8th floor, 379 Hudson St, New
-          York, NY 10018 or call us on (+1)967166879
+          York, NY 10018 or call us on (+1)9876543210
         </p>
         <div>
           <SocialMedia />
@@ -20,7 +20,7 @@ const Footer = () => {
           Copyright <span>&copy;</span> 2022 All rights reserved.
         </p>
       </div>
-      <div className=" gap-y-2 grid">
+      <div className=" gap-y-2 grid ">
         <h1 className="pointer  font-bold font-serif ">QUICK LINKS</h1>
         <p className="cursor-pointer">Purchase</p>
         <p className="cursor-pointer">Payment</p>
@@ -28,7 +28,7 @@ const Footer = () => {
         <p className="cursor-pointer">Return</p>
         <p className="cursor-pointer">Policies</p>
       </div>
-      <div className=" gap-y-2 grid">
+      <div className=" gap-y-2 grid ">
         <h1 className="pointer  font-bold font-serif ">BRAND</h1>
         <p className="cursor-pointer">Fendi</p>
         <p className="cursor-pointer">Tag Heuer</p>
@@ -41,10 +41,7 @@ const Footer = () => {
         <p>Subscribe your email to get the latest news and new offers.</p>
         <div className="flex border h-10 pl-4 rounded justify-between">
           <input className="" type="email" placeholder="Email Address" />
-          <Link
-            to="/"
-            className="w-1/5  bg-secondary grid place-content-around"
-          >
+          <Link to="/" className="w-1/5 bg-primary grid place-content-around">
             <SiMinutemailer className="text-2xl" />
           </Link>
         </div>

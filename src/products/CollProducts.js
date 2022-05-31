@@ -4,7 +4,7 @@ import AllProducts from "./AllProducts";
 const CollProducts = ({ filter }) => {
   const [products, setProducts] = useState(AllProducts);
   useEffect(() => {
-    console.table(filter);
+    // console.table(filter);
 
     let temp = AllProducts;
     for (const [key, value] of Object.entries(filter)) {
@@ -19,7 +19,7 @@ const CollProducts = ({ filter }) => {
 
   return (
     <>
-      <div className="grid grid-cols-3 gap-8 py-20">
+      <div className="grid laptop:grid-cols-3 gap-8 ">
         {products.map((product) => (
           <div key={product.id}>
             <img

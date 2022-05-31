@@ -7,7 +7,9 @@ const BestSelling = () => {
       <p className="text-4xl w-full grid place-content-center font-semibold">
         Best Selling{" "}
       </p>
-      <BestProducts />
+      <div>
+        <BestProducts />
+      </div>
     </div>
   );
 };

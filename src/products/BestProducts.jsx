@@ -4,7 +4,7 @@ import { products } from "./allProductsData";
 const BestProducts = () => {
   return (
     <>
-      <div className="flex h-4/5  py-6 gap-8  p-auto justify-center ">
+      <div className="laptop:flex grid h-4/5  py-6 gap-8  p-auto justify-center ">
         {products.map((product) => {
           return (
             <div key={product.id}>

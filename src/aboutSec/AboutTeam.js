@@ -29,14 +29,14 @@ const Members = [
 const AboutTeam = () => {
   return (
     <>
-      <p className="text-2xl font-bold grid place-content-center py-10">
+      <p className="text-2xl font-bold grid place-content-center laptop:py-10 py-2">
         Our Team
       </p>
-      <div className="flex gap-8 justify-center  pb-12">
+      <div className="laptop:flex  grid  gap-8  justify-center  pb-12">
         {Members.map((member) => (
           <div key={member.id}>
             <img src={member.memImg} alt="member" />
-            <div className="grid place-content-center font-semibold text-xl py-4">
+            <div className="grid place-content-center font-semibold text-xl  laptop:py-4">
               {member.memName}
             </div>
             <div className="grid place-content-center"> {member.memPos}</div>

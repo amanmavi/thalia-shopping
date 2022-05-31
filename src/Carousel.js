@@ -20,12 +20,11 @@ const ResponsiveCarousel = () => {
   ];
 
   return (
-    <Carousel>
+    <Carousel showThumbs={false}>
       {images.map((image, index) => {
         return (
-          <div className="h-128">
+          <div className="h-128" key={index}>
             <div
-              key={index}
               className="h-full w-screen bg-cover bg-no-repeat bg-center bg-slate-800"
               style={{
                 backgroundImage: "url(" + image.src + ")",

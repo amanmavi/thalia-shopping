@@ -31,11 +31,11 @@ const BlogPosts = () => {
     <>
       <div className="grid place-content-center py-10  ">
         {Posts.map((post) => (
-          <div key={post.id} className="grid gap-y-2 py-8">
+          <div key={post.id} className="grid gap-y-2 py-8 px-4">
             <div className="font-semibold text-xl"> {post.blogTitle}</div>
             <div className="font-light font-mono"> {post.blogDate}</div>
             <img src={post.blogImg} alt="blog-post" />
-            <div className="w-2/3"> {post.blogText}</div>
+            <div className="laptop:w-2/3 w-full"> {post.blogText}</div>
             <button className="px-6 w-40 py-4 rounded font-semibold hover:bg-primary hover:text-white">
               Read More
             </button>

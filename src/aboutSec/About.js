@@ -4,11 +4,11 @@ import AboutVid from "./AboutVid";
 import AboutTeam from "./AboutTeam";
 const About = () => {
   return (
-    <>
+    <div>
       <AboutIntro />
       <AboutVid />
       <AboutTeam />
-    </>
+    </div>
   );
 };
 

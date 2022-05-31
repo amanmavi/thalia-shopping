@@ -33,7 +33,7 @@ const ShowroomInfo = () => {
         className="w-full bg-no-repeat bg-cover"
         style={{ backgroundImage: 'url("images/store.jpg")' }}
       >
-        <div className="flex flex-col md:flex-row justify-center gap-24 py-6 h-full items-end bg-slate-500/25">
+        <div className="flex flex-col laptop:flex-row justify-center gap-24 py-6 h-full items-end bg-slate-500/25">
           {rooms.map((room) => (
             <div
               className="space-y-2 w-full text-center text-white hover:text-primary"

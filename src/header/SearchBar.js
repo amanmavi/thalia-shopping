@@ -10,13 +10,13 @@ const SearchBar = () => {
             id="search"
             type="text"
             placeholder="What are you looking for?"
-            className="w-48"
+            className="hidden laptop:w-48  laptop:flex"
           />
           <label htmlFor="search">
             <img
               src="./icons/search.png"
               alt="searchIcon"
-              className="w-6 mx-10 object-contain"
+              className="w-6 laptop:mx-10 object-contain"
             />
           </label>
         </div>
