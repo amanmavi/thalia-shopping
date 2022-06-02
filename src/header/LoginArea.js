@@ -9,7 +9,6 @@ const LoginArea = () => {
       className="flex gap-2 cursor-pointer border-x-2 laptop:px-4 px-1 py-1 hover:bg-slate-200 "
       onClick={() => setModalIsOpen(true)}
     >
-      <p>Login</p>
       <img
         src="./icons/user.png"
         alt="user"
