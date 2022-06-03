@@ -1,15 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CollProducts from "../products/CollProducts";
 import Filter from "../products/Filter";
 import { FaFilter } from "react-icons/fa";
 import classNames from "classnames";
+import { useParams } from "react-router-dom";
 
 const Collection = () => {
+  const [showFilter, setShowFilter] = useState(false);
+  let { product } = useParams();
   const [filter, setFilter] = useState({
     color: [],
     prodBrand: [],
+    prodCat: [],
   });
-  const [showFilter, setShowFilter] = useState(false);
+  useEffect(() => {
+    if (product) {
+      let filterOfCategory = filter.prodCat;
+      if (!filterOfCategory.includes(product)) {
+        filterOfCategory.push(product);
+      }
+
+      let temp = { ...filter };
+      temp.prodCat = filterOfCategory;
+      setFilter(temp);
+    }
+  }, []);
 
   return (
     <div className="grid grid-cols-12 gap-4 laptop:mt-20 px-8">

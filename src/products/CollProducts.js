@@ -3,6 +3,7 @@ import AllProducts from "./AllProducts";
 
 const CollProducts = ({ filter }) => {
   const [products, setProducts] = useState(AllProducts);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     // console.table(filter);
 
@@ -17,22 +18,28 @@ const CollProducts = ({ filter }) => {
     setProducts(temp);
   }, [filter]);
 
+  useEffect(() => {
+    setLoading(false);
+  }, [products]);
+
   return (
     <>
-      <div className="grid laptop:grid-cols-3 gap-8 ">
-        {products.map((product) => (
-          <div key={product.id}>
-            <img
-              className="h-96 w-80 object-cover"
-              src={product.prodImg}
-              alt="collection-item"
-            />
-            <p className="grid place-content-center font-serif py-2">
-              {product.prodBrand}
-            </p>
-          </div>
-        ))}
-      </div>
+      {loading ? (
+        "Loading..."
+      ) : (
+        <div className="grid laptop:grid-cols-3 gap-8 ">
+          {products.map((product) => (
+            <div key={product.id}>
+              <img
+                className="h-96 w-80 object-cover"
+                src={product.prodImg}
+                alt="collection-item"
+              />
+              <p className="text-center font-serif py-2">{product.prodBrand}</p>
+            </div>
+          ))}
+        </div>
+      )}
     </>
   );
 };

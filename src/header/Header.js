@@ -24,7 +24,7 @@ const Header = ({ ShowNav, setShowNav }) => {
         <div>
           <Link
             to="/home"
-            className="pointer text-2xl font-bold font-serif text-secondary"
+            className="pointer text-2xl font-bold  ml-20 font-serif text-secondary"
           >
             THALIA
           </Link>

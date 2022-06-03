@@ -10,7 +10,7 @@ const LoginArea = () => {
       onClick={() => setModalIsOpen(true)}
     >
       <img
-        src="./icons/user.png"
+        src="/icons/user.png"
         alt="user"
         className="laptop:w-8 w-6  object-contain"
       />

@@ -33,7 +33,7 @@ export const products = [
     prodType: "Limited Edition",
   },
   {
-    id: "purse11",
+    id: "purse1",
     prodCat: "bag",
     prodImg: [
       "images/purse_pics/purse1_pic1.jpg",

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="laptop:w-3/4  mx-auto laptop:flex grid justify-around border-t px-12 py-8 gap-y-4">
+    <div className="laptop:w-3/4  mx-auto laptop:flex grid justify-around border-t laptop:px-12 px-4 laptop:py-8 py-4 gap-y-4">
       <div className="laptop:w-1/4 w-full gap-y-2 grid ">
         <h1 className="pointer font-bold text-2xl">THALIA</h1>
         <p>
@@ -20,21 +20,23 @@ const Footer = () => {
           Copyright <span>&copy;</span> 2022 All rights reserved.
         </p>
       </div>
-      <div className=" gap-y-2 grid ">
-        <h1 className="pointer  font-bold font-serif ">QUICK LINKS</h1>
-        <p className="cursor-pointer">Purchase</p>
-        <p className="cursor-pointer">Payment</p>
-        <p className="cursor-pointer">Shipping</p>
-        <p className="cursor-pointer">Return</p>
-        <p className="cursor-pointer">Policies</p>
-      </div>
-      <div className=" gap-y-2 grid ">
-        <h1 className="pointer  font-bold font-serif ">BRAND</h1>
-        <p className="cursor-pointer">Fendi</p>
-        <p className="cursor-pointer">Tag Heuer</p>
-        <p className="cursor-pointer">Yves Lauren</p>
-        <p className="cursor-pointer">Red River</p>
-        <p className="cursor-pointer">Banana Republic</p>
+      <div className="flex gap-20">
+        <div className=" gap-y-2 grid ">
+          <h1 className="pointer  font-bold font-serif ">QUICK LINKS</h1>
+          <p className="cursor-pointer">Purchase</p>
+          <p className="cursor-pointer">Payment</p>
+          <p className="cursor-pointer">Shipping</p>
+          <p className="cursor-pointer">Return</p>
+          <p className="cursor-pointer">Policies</p>
+        </div>
+        <div className=" gap-y-2 grid ">
+          <h1 className="pointer  font-bold font-serif ">BRAND</h1>
+          <p className="cursor-pointer">Fendi</p>
+          <p className="cursor-pointer">Tag Heuer</p>
+          <p className="cursor-pointer">Yves Lauren</p>
+          <p className="cursor-pointer">Red River</p>
+          <p className="cursor-pointer">Banana Republic</p>
+        </div>
       </div>
       <div className=" gap-y-2 grid">
         <h1 className="pointer  font-bold font-serif ">NEWS LETTER</h1>

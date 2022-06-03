@@ -45,11 +45,11 @@ const Filter = ({ filter, setFilter }) => {
     <div className="space-y-6  p-8">
       {filters.map((filterCategory) => {
         return (
-          <div>
+          <div key={filterCategory.category}>
             <p className="font-semibold mb-4">{filterCategory.label}</p>
             {filterCategory.values.map((filterValue) => {
               return (
-                <div className="flex gap-8 mb-2">
+                <div className="flex gap-8 mb-2" key={filterValue}>
                   <input
                     type="checkbox"
                     value={filterValue}

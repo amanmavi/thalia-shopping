@@ -22,9 +22,10 @@ const BestProducts = () => {
                 <p className="text-white bg-primary w-36 rounded text-center absolute top-2 left-2 ">
                   {product.prodType}
                 </p>
-                <p className="w-12 h-8 text-center   bg-secondary rounded absolute top-10 left-2">
-                  {product.prodDisc}
-                </p>
+                <div className="w-12 h-8  text-white  grid place-items-center bg-black rounded absolute top-10 left-2">
+                  <span>{product.prodDisc}</span>
+                </div>
+
                 <p className="text-center">{product.prodBrand}</p>
               </section>
             </div>
