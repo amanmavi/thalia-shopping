@@ -24,7 +24,7 @@ const Collection = () => {
       temp.prodCat = filterOfCategory;
       setFilter(temp);
     }
-  }, []);
+  }, [filter, product]);
 
   return (
     <div className="grid grid-cols-12 gap-4 laptop:mt-20 px-8">
